@@ -1,0 +1,16 @@
+n = int(input("how old r u? "))
+sum = ((n * (n + 1)) / 2)
+while (n <= 0):
+    print ("invalid")
+    n = int(input("how old r u? "))
+print ("true")
+    
+def getsum(n): 
+    ni = 0
+    for i in range(0, n + 1):
+        ni += i
+    return ni
+
+if sum == getsum(n): 
+   print ("verified")
+print(f"after calling the function getsum, the sum of all numbers from 1 to {n} is {sum}")
